@@ -1,6 +1,5 @@
+import { Menu } from "lucide-react"
 import Button from "../components/Button"
-
-
 
 const Navbar = () => {
 
@@ -13,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-transparent py-5 ">
-      <nav className="container flex items-center mx-auto px-15 justify-between">
+      <nav className="container flex items-center mx-auto px-6 justify-between">
         <a href="#" className="text-xl font-bold tracking-tight hover:text-primary ">Portfolio</a>
 
         {/* Desktop nav */}
@@ -35,8 +34,13 @@ const Navbar = () => {
         </div> */}
 
         {/* Mobile Menu Button */}
-
+        <button className="md:hidden p-2 text-foreground">
+          <Menu size={24}/>
+        </button>
       </nav>
+
+      {/* Mobile Menu */}
+      <div className="md:hidden glass"></div>
     </header>
   )
 }
