@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
-      <nav className="container flex items-center mx-auto px-6 justify-between">
+      <nav className="container flex items-center mx-auto px-12 justify-between">
         <a href="#" className="text-xl font-bold tracking-tight hover:text-primary ">Portfolio</a>
 
         {/* Desktop nav */}
@@ -61,11 +61,12 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <a href={link.href}
                 key={index}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="text-lg text-muted-foreground hover:text-foreground py-2">
                 {link.label}</a>
             ))}
 
-            {/* <Button>Contact Me</Button> */}
+            {/* <Button onClick={()=>setIsMobileMenuOpen(false)}>Contact Me</Button> */}
 
           </div>
         </div>)}

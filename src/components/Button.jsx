@@ -22,4 +22,3 @@ const Button = ({ className="", size = "default", children }) => {
 
 export default Button
 
-// 31:00

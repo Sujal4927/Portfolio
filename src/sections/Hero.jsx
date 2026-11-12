@@ -62,7 +62,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      <div className="container mx-auto px-12 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - text content */}
           <div className="space-y-8">
@@ -174,4 +174,4 @@ const Hero = () => {
 
 export default Hero
 
-// 1:20:10
+// 1:24:24
