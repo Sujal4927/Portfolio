@@ -93,7 +93,10 @@ const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className='w-5 h-5' />
               </Button>
-              <AnimatedBorderButton />
+              <AnimatedBorderButton>
+              <Download className='w-5 h-5'/>
+                Resume
+              </AnimatedBorderButton>
             </div>
 
             {/* Social Links */}
