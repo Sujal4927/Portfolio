@@ -75,12 +75,9 @@ const Hero = () => {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100'>Turning ideas
-                <br />
-                into <span className='text-primary glow-text'>reality</span>
-                <br />
-                through <span className='font-serif italic normal text-white'>code.</span>
-              </h1>
+              <h2 className='text-4xl md:text-5xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100'>Building
+              <span className='text-primary glow-text'> Scalable</span> <br /> Web Solutions
+              </h2>
 
               <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'>
                 Hi, I'm Sujal - a full stack developer specializing in
@@ -103,8 +100,8 @@ const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className='text-lg text-muted-foreground'>Follow me: </span>
               {[
-                { icon: FaGithub, href: "#" },
-                { icon: FaLinkedin, href: "#" },
+                { icon: FaGithub, href: "https://github.com/Sujal4927" },
+                { icon: FaLinkedin, href: "https://www.linkedin.com/in/sujal-waghmare49/" },
                 { icon: FaTwitter, href: "#" },
               ].map((social, idx) => (
                 <a key={idx} href={social.href}
@@ -113,6 +110,7 @@ const Hero = () => {
               ))}
             </div>
           </div>
+
           {/* Right Column - text content */}
           <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
@@ -130,10 +128,10 @@ const Hero = () => {
                   </div>
                 </div>
                 {/* Stats Badge */}
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+                {/* <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
                   <div className="text-2xl font-bold text-primary">5+</div>
                   <div className="text-xs text-muted-foreground">Years Exp.</div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

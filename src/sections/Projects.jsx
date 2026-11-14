@@ -10,23 +10,23 @@ const Projects = () => {
       title: "CarRental",
       description: "A sophisticated car renting and management system featuring real-time car booking and comprehensive admin controls. Built using MERN stack with user-friendly interfaces.",
       image: "/projects/carrental.png",
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js"],
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCss"],
       link: "#",
       github: "https://github.com/Sujal4927/Car-Rental"
     },
     {
       title: "ExamNotes AI",
       description: "Generative AI-powered study and revision platform that generates notes, extracts key topics and engineered interactive data visualizations and dynamic charts using React and charting libraries, optimizing render performance for complex datasets.",
-      image: "",
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase", "Gemini API", "Recharts"],
+      image: "/projects/Examnotes.JPG",
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase", "Gemini API", "Recharts", "TailwindCss"],
       link: "#",
-      github: "#"
+      github: "https://github.com/Sujal4927/ExamNotes-AI"
     },
     {
       title: "JobAxis",
       description: "A comprehensive full-stack job portal connecting jobseekers with recruiters, supporting job discovery, online applications, and resume uploads and application-status tracking. Enabled interactive and real-time data streaming recruiter dashboard functionality to create and manage job postings and review candidate applications.",
       image: "/projects/jobaxis.JPG",
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js"],
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCss"],
       link: "#",
       github: "https://github.com/Sujal4927/JobAxis"
     },
@@ -55,7 +55,7 @@ const Projects = () => {
               {/* Image */}
               <div className="relative overflow-hidden aspect-video">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60" />
+                <div className="absolute inset-0 opacity-60" />
 
                 {/* Overlays links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -92,7 +92,7 @@ const Projects = () => {
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <a href="https://github.com/Sujal4927">
             <AnimatedBorderButton>
-              View All Projects
+              View More on GitHub
               <ArrowUpRight className='w-5 h-5' />
             </AnimatedBorderButton>
           </a>
