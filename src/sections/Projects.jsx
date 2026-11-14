@@ -10,7 +10,7 @@ const Projects = () => {
       title: "CarRental",
       description: "A sophisticated car renting and management system featuring real-time car booking and comprehensive admin controls. Built using MERN stack with user-friendly interfaces.",
       image: "/projects/carrental.png",
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCss"],
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCSS"],
       link: "#",
       github: "https://github.com/Sujal4927/Car-Rental"
     },
@@ -18,15 +18,15 @@ const Projects = () => {
       title: "ExamNotes AI",
       description: "Generative AI-powered study and revision platform that generates notes, extracts key topics and engineered interactive data visualizations and dynamic charts using React and charting libraries, optimizing render performance for complex datasets.",
       image: "/projects/Examnotes.JPG",
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase", "Gemini API", "Recharts", "TailwindCss"],
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase", "Gemini API", "Recharts", "TailwindCSS"],
       link: "#",
       github: "https://github.com/Sujal4927/ExamNotes-AI"
     },
     {
       title: "JobAxis",
-      description: "A comprehensive full-stack job portal connecting jobseekers with recruiters, supporting job discovery, online applications, and resume uploads and application-status tracking. Enabled interactive and real-time data streaming recruiter dashboard functionality to create and manage job postings and review candidate applications.",
+      description: "A full-stack job portal connecting jobseekers with recruiters, supporting job discovery, online applications, and resume uploads and application-status tracking. Enabled interactive and real-time data streaming recruiter dashboard functionality to create and manage job postings and review candidate applications.",
       image: "/projects/jobaxis.JPG",
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCss"],
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCSS"],
       link: "#",
       github: "https://github.com/Sujal4927/JobAxis"
     },
@@ -80,7 +80,7 @@ const Projects = () => {
                   {project.tags.map((tag, tagIdx) => (
                     <span
                       key={tagIdx}
-                      className='px-4 py-1.5 rounded-full bg-surface text-md font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300'>{tag}</span>
+                      className='px-4 py-1.5 rounded-full bg-surface text-sm font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300'>{tag}</span>
                   ))}
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Projects = () => {
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <a href="https://github.com/Sujal4927">
             <AnimatedBorderButton>
-              View More on GitHub
+              View All Projects
               <ArrowUpRight className='w-5 h-5' />
             </AnimatedBorderButton>
           </a>
