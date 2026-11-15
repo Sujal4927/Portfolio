@@ -32,7 +32,7 @@ const About = () => {
           {/* Left column */}
           <div className="space-y-8">
             <div className="animate-fade-in text-center">
-              <span className='text-secondary-foreground text-4xl font-medium tracking-wider'>About Me</span>
+              <span className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground'>About Me</span>
             </div>
 
             {/* <h2 className='text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground'>
