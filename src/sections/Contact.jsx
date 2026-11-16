@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../components/Button'
-import { FaPaperPlane } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaPaperPlane } from 'react-icons/fa'
 import { LuMail } from 'react-icons/lu'
 import { MdLocationOn } from 'react-icons/md'
 
@@ -74,7 +74,7 @@ const Contact = () => {
                 <textarea
                   rows={5}
                   required
-                  placeholder="Your message"
+                  placeholder="Your message..."
                   className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:rimg-primary outline-none transition-all resize-none" />
               </div>
 
@@ -111,6 +111,24 @@ const Contact = () => {
                     </a>
                   ))
                 }
+              </div>
+            </div>
+
+            {/* Connect  */}
+            <div className="glass rounded-3xl p-8 border border-primary/30">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
+                <span className="text-xl font-semibold">Connect</span>
+              </div>
+              <div className="grid grid-cols-2 gap-15">
+                <a href="https://www.linkedin.com/in/sujal-waghmare49/" className="flex items-center gap-3 p-4 border border-primary/30 rounded-xl  hover:bg-surface hover:text-primary/50">
+                  <FaLinkedin className="w-5 h-5" />
+                  <span className="font-medium">LinkedIn</span>
+                </a>
+                <a href="https://github.com/Sujal4927" className="flex items-center gap-3 p-4 rounded-xl border border-primary/30  hover:bg-surface hover:text-primary/50 ">
+                  <FaGithub className="w-5 h-5 " />
+                  <span className="font-medium">GitHub</span>
+                </a>
               </div>
             </div>
           </div>

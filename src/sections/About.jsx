@@ -72,7 +72,7 @@ const About = () => {
                   style={{ animationDelay: `${(idx + 1) * 100}ms` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20">
-                   <span className='text-2xl text-primary items-center justify-center'>{item.icon}</span> 
+                    <span className='text-2xl text-primary items-center justify-center'>{item.icon}</span>
                   </div>
                   <h3 className='text-lg font-semibold mb-2'>{item.title}</h3>
                   <p className='text-sm text-muted-foreground'>{item.description}</p>
@@ -81,7 +81,8 @@ const About = () => {
             </div> */}
         </div>
         {/* </div> */}
-      </section></>
+      </section>
+    </>
   )
 }
 

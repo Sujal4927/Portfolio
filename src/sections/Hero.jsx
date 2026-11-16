@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../components/Button'
 import { ArrowRight, Download } from 'lucide-react'
 import AnimatedBorderButton from '../components/AnimatedBorderButton'
-import { FaChevronDown, FaGithub, FaLinkedin, FaNodeJs, FaReact, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaNodeJs, FaReact, FaTwitter } from 'react-icons/fa'
 import { SiCplusplus, SiCss, SiExpress, SiGit, SiGithub, SiHtml5, SiJavascript, SiMongodb } from 'react-icons/si'
 
 
@@ -76,7 +76,7 @@ const Hero = () => {
             {/* Headline */}
             <div className="space-y-4">
               <h2 className='text-4xl md:text-5xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100'>Building
-              <span className='text-primary glow-text'> Scalable</span> <br /> Web Solutions
+                <span className='text-primary glow-text'> Scalable</span> <br /> Web Solutions
               </h2>
 
               <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'>
@@ -91,7 +91,7 @@ const Hero = () => {
                 Contact Me <ArrowRight className='w-5 h-5' />
               </Button>
               <AnimatedBorderButton>
-              <Download className='w-5 h-5'/>
+                <Download className='w-5 h-5' />
                 Resume
               </AnimatedBorderButton>
             </div>
@@ -138,17 +138,17 @@ const Hero = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
+        {/* <div className="mt-20 animate-fade-in animation-delay-600">
           <p className='text-sm text-muted-foreground mb-6 text-center'>Technologies I work with</p>
           <div className="relative overflow-hidden">
             <div className="flex animate-marquee">
-              {/* {[...logos, ...logos].map((logo, idx) => (
+              {[...logos, ...logos].map((logo, idx) => (
                   <div className="shrink-0 px-8 py-2" key={idx}>
                     <span className='text-3xl text-muted-foregound font-semibold hover:text-primary/50 transition-colors'>
                       {logo}
                     </span>
                   </div>
-                ))} */}
+                ))}
 
               {[...skills, ...skills].map((skill, idx) => (
                 <div className="shrink-0 px-8 py-2" key={idx}>
@@ -159,16 +159,16 @@ const Hero = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
         <a href="#about"
           className='flex flex-col items-center gap-2 text-muted-foreground hover:text-primary'>
           <span className='text-xs uppercase tracking-wider'>Scroll</span>
           <FaChevronDown className='w-6 h-6 animate-bounce' />
         </a>
-      </div>
+      </div> */}
     </section >
   )
 }
