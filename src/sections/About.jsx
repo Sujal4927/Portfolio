@@ -35,13 +35,6 @@ const About = () => {
               <span className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground'>About Me</span>
             </div>
 
-            {/* <h2 className='text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground'>
-                Building the future,
-                <span className='font-serif italic font-normal text-white'>
-                   one component at a time.
-                </span>
-              </h2> */}
-
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
                 I am a Full stack developer with a strong foundation in programming and development. I am proficient in C++. My expertise extends to front-end technologies such as JavaScript, ReactJS. On the backend, I have hands-on experience with frameworks like Node.js, Express.js. My strong problem-solving skills, particularly in Data Structures and Algorithms & OOPS Concepts, enable me to effectively address complex technical challenges
@@ -56,11 +49,11 @@ const About = () => {
               </p>
             </div>
 
-            <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+            {/* <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className='text-lg font-medium italic text-foreground'>
                 "My mission is to create digital experiences that are not just functional, but truly delightful - products that users love to use and developers love to maintain."
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Right column */}

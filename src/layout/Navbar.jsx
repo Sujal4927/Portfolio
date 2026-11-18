@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react"
+import { Code, Menu, X } from "lucide-react"
 import Button from "../components/Button"
 import { useEffect, useState } from "react"
 
@@ -29,8 +29,13 @@ const Navbar = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
-      <nav className="container flex items-center mx-auto px-12 justify-between">
-        <a href="#" className="text-xl font-bold tracking-tight hover:text-primary ">Portfolio</a>
+      <nav className="container flex items-center mx-auto px-6 justify-between">
+        <div className="items-center ">
+          <a href="#" className="text-xl font-bold tracking-tight inline-flex gap-2">
+            <Code className="px-1 py-1 w-8 h-8 bg-primary rounded-xl hover:text-white" />
+            <span className="hover:text-primary">Portfolio</span>
+          </a>
+        </div>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-1">

@@ -16,7 +16,7 @@ const Skills = () => {
     },
     {
       icon: <SiJavascript />,
-      name: "Javascript",
+      name: "JavaScript",
     },
   ]
 
@@ -31,7 +31,7 @@ const Skills = () => {
     },
     {
       icon: <FaHtml5 />,
-      name: "HTML5",
+      name: "HTML",
     },
     {
       icon: <FaCss3 />,
@@ -89,17 +89,17 @@ const Skills = () => {
             <div className="">
               <h3 className="text-3xl font-semibold">Programming Languages</h3>
             </div>
-            <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {languages.map((lang, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col items-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary backdrop-blur animate-fade-in"
+                  className="min-w-3 flex flex-col items-center justify-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary backdrop-blur animate-fade-in"
                   style={{ animationDelay: `${(idx + 1) * 100}ms` }}
                 >
-                  <div className="px-2 py-2 rounded-xl items-center">
+                  <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                     <span className="text-4xl">{lang.icon}</span>
                   </div>
-                  <span className="text-xl font-semibold text-primary/50">{lang.name}</span>
+                  <span className="text-lg pt-1 font-semibold">{lang.name}</span>
                 </div>
               ))}
             </div>
@@ -110,17 +110,17 @@ const Skills = () => {
             <div className="">
               <h3 className="text-3xl font-semibold">FrontEnd Development</h3>
             </div>
-            <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {frontend.map((front, fidx) => (
                 <div
                   key={fidx}
-                  className="flex flex-col items-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
+                  className="min-w-3 flex flex-col items-center justify-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
                   style={{ animationDelay: `${(fidx + 1) * 100}ms` }}
                 >
-                  <div className="px-2 py-2 rounded-xl items-center">
+                  <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                     <span className="text-4xl">{front.icon}</span>
                   </div>
-                  <span className="text-xl font-semibold text-primary/50">{front.name}</span>
+                  <span className="text-lg pt-1 font-semibold">{front.name}</span>
                 </div>
               ))}
             </div>
@@ -131,17 +131,17 @@ const Skills = () => {
             <div className="">
               <h3 className="text-3xl font-semibold">BackEnd Development</h3>
             </div>
-            <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {backend.map((back, bidx) => (
                 <div
                   key={bidx}
-                  className="flex flex-col items-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
+                  className="min-w-3 flex flex-col items-center justify-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
                   style={{ animationDelay: `${(bidx + 1) * 100}ms` }}
                 >
-                  <div className="px-2 py-2 rounded-xl items-center">
+                  <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                     <span className="text-4xl">{back.icon}</span>
                   </div>
-                  <span className="text-xl font-semibold text-primary/50">{back.name}</span>
+                  <span className="text-lg pt-1 font-semibold">{back.name}</span>
                 </div>
               ))}
             </div>
@@ -152,17 +152,17 @@ const Skills = () => {
             <div className="">
               <h3 className="text-3xl font-semibold">Databases & Version Control</h3>
             </div>
-            <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {database.map((data, didx) => (
                 <div
                   key={didx}
-                  className="flex flex-col items-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
+                  className="min-w-3 flex flex-col items-center justify-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
                   style={{ animationDelay: `${(didx + 1) * 100}ms` }}
                 >
-                  <div className="px-2 py-2 rounded-xl items-center">
+                  <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                     <span className="text-4xl">{data.icon}</span>
                   </div>
-                  <span className="text-xl font-semibold text-primary/50">{data.name}</span>
+                  <span className="text-lg pt-1 font-semibold">{data.name}</span>
                 </div>
               ))}
             </div>

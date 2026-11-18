@@ -1,6 +1,5 @@
-import { ArrowUpRight } from 'lucide-react'
-import React from 'react'
-import { FaEye, FaGithub } from 'react-icons/fa'
+import { ExternalLink } from 'lucide-react'
+import { FaGithub } from 'react-icons/fa'
 import AnimatedBorderButton from '../components/AnimatedBorderButton'
 
 const Projects = () => {
@@ -60,7 +59,7 @@ const Projects = () => {
                 {/* Overlays links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a href={project.link} className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
-                    <ArrowUpRight className='w-6 h-6' />
+                    <ExternalLink className='w-6 h-6' />
                   </a>
                   <a href={project.github} className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
                     <FaGithub className='w-6 h-6' />
@@ -72,7 +71,7 @@ const Projects = () => {
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
                   <h3 className='text-xl font-semibold group-hover:text-primary transition-colors'>{project.title}</h3>
-                  <ArrowUpRight
+                  <ExternalLink
                     className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:translate-y-1 transition-all" />
                 </div>
                 <p className='text-muted-foreground text-md'>{project.description}</p>
@@ -93,7 +92,7 @@ const Projects = () => {
           <a href="https://github.com/Sujal4927">
             <AnimatedBorderButton>
               View All Projects
-              <ArrowUpRight className='w-5 h-5' />
+              <ExternalLink className='w-5 h-5' />
             </AnimatedBorderButton>
           </a>
         </div>

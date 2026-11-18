@@ -3,18 +3,19 @@ import Button from '../components/Button'
 import { FaGithub, FaLinkedin, FaPaperPlane } from 'react-icons/fa'
 import { LuMail } from 'react-icons/lu'
 import { MdLocationOn } from 'react-icons/md'
+import { Mail, MapPin } from 'lucide-react'
 
 const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <LuMail className="w-6 h-6 text-primary" />,
+      icon: <Mail className="w-6 h-6 text-primary" />,
       label: "Email",
       value: "sujalwaghmare8471@gmail.com",
       href: "maito:sujalwaghmare8471@gmail.com",
     },
     {
-      icon: <MdLocationOn className="w-6 h-6 text-primary" />,
+      icon: <MapPin className="w-6 h-6 text-primary" />,
       label: "Location",
       value: "Mumbai, India",
       href: "#",
