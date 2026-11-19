@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: "ExamNotes AI",
       description: "Generative AI-powered study and revision platform that generates notes, extracts key topics and engineered interactive data visualizations and dynamic charts using React and charting libraries, optimizing render performance for complex datasets.",
-      image: "/projects/Examnotes.JPG",
+      image: "/projects/examnotes.png",
       tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase", "Gemini API", "Recharts", "TailwindCSS"],
       link: "#",
       github: "https://github.com/Sujal4927/ExamNotes-AI"
@@ -24,7 +24,7 @@ const Projects = () => {
     {
       title: "JobAxis",
       description: "A full-stack job portal connecting jobseekers with recruiters, supporting job discovery, online applications, and resume uploads and application-status tracking. Enabled interactive and real-time data streaming recruiter dashboard functionality to create and manage job postings and review candidate applications.",
-      image: "/projects/jobaxis.JPG",
+      image: "/projects/JobAxis.png",
       tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCSS"],
       link: "#",
       github: "https://github.com/Sujal4927/JobAxis"

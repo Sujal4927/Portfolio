@@ -50,7 +50,7 @@ const Skills = () => {
     },
     {
       icon: <TbApi />,
-      name: "REST APIs",
+      name: "Rest APIs",
     },
   ]
 
@@ -86,14 +86,14 @@ const Skills = () => {
         <div className="grid md:grid-cols-2 gap-12 ">
           {/* 1st left box */}
           <div className="">
-            <div className="">
+            <div className="text-center">
               <h3 className="text-3xl font-semibold">Programming Languages</h3>
             </div>
             <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {languages.map((lang, idx) => (
                 <div
                   key={idx}
-                  className="min-w-3 flex flex-col items-center justify-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary backdrop-blur animate-fade-in"
+                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary backdrop-blur animate-fade-in"
                   style={{ animationDelay: `${(idx + 1) * 100}ms` }}
                 >
                   <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
@@ -107,14 +107,14 @@ const Skills = () => {
 
           {/* 1st Right box */}
           <div className="">
-            <div className="">
-              <h3 className="text-3xl font-semibold">FrontEnd Development</h3>
+            <div className="text-center">
+              <h3 className="text-3xl font-semibold">Frontend Development</h3>
             </div>
             <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {frontend.map((front, fidx) => (
                 <div
                   key={fidx}
-                  className="min-w-3 flex flex-col items-center justify-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
+                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
                   style={{ animationDelay: `${(fidx + 1) * 100}ms` }}
                 >
                   <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
@@ -128,14 +128,14 @@ const Skills = () => {
 
           {/* 2nd left box */}
           <div className="">
-            <div className="">
-              <h3 className="text-3xl font-semibold">BackEnd Development</h3>
+            <div className="text-center">
+              <h3 className="text-3xl font-semibold">Backend Development</h3>
             </div>
             <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {backend.map((back, bidx) => (
                 <div
                   key={bidx}
-                  className="min-w-3 flex flex-col items-center justify-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
+                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
                   style={{ animationDelay: `${(bidx + 1) * 100}ms` }}
                 >
                   <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
@@ -149,14 +149,14 @@ const Skills = () => {
 
           {/* 2nd right box */}
           <div className="">
-            <div className="">
+            <div className="text-center">
               <h3 className="text-3xl font-semibold">Databases & Version Control</h3>
             </div>
             <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {database.map((data, didx) => (
                 <div
                   key={didx}
-                  className="min-w-3 flex flex-col items-center justify-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
+                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
                   style={{ animationDelay: `${(didx + 1) * 100}ms` }}
                 >
                   <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">

@@ -58,7 +58,7 @@ const Education = () => {
                         </div>
                     </div>
 
-                    {/* Certifications */}
+                    {/* Achievements */}
                     <div className="">
                         <div className="flex items-center space-x-3 mb-6">
                             <div className="p-3 rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
@@ -70,7 +70,7 @@ const Education = () => {
                             <div className="p-6 rounded-2xl bg-surface border border-primary/50 ">
                                 <div className="flex items-start justify-between mb-4 flex-wrap">
                                     <div className="">
-                                        <h4 className="text-xl font-semibold">190+ Problems Solved</h4>
+                                        <h4 className="text-xl font-semibold">195+ Problems Solved</h4>
                                         <p className="font-xl text-primary">GeeksForGeeks</p>
                                     </div>
                                     <span className="px-3 py-1 font-semibold rounded-xl bg-primary text-surface">Active</span>

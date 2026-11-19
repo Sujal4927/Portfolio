@@ -3,20 +3,20 @@
 const Experience = () => {
 
   const experiences = [
-    {
-      period: "Nov 2026 - Present",
-      role: "Full-Stack Developer Intern",
-      company: "Qskill",
-      description: "A full-stack job portal connecting jobseekers with recruiters, supporting job discovery, online applications, and resume uploads and application-status tracking. Enabled interactive and real-time data streaming recruiter dashboard functionality to create and manage job postings and review candidate applications. ",
-      technologies: ["React.js", "Node.js", "TailwindCSS", "Express.js"],
-      current: true,
-    },
+    // {
+    //   period: "Nov 2026 - Present",
+    //   role: "Full-Stack Developer Intern",
+    //   company: "Qskill",
+    //   description: "A full-stack job portal connecting jobseekers with recruiters, supporting job discovery, online applications, and resume uploads and application-status tracking. Enabled interactive and real-time data streaming recruiter dashboard functionality to create and manage job postings and review candidate applications. ",
+    //   technologies: ["React.js", "Node.js", "TailwindCSS", "Express.js"],
+    //   current: true,
+    // },
     {
       period: "Aug 2026 - Sep 2026",
       role: "Frontend Developer Intern",
       company: "Freelance",
       description: "Built Generative AI-powered study and revision platform that generates notes, extracts key topics and engineered interactive data visualizations and dynamic charts using React and charting libraries, optimizing render performance for complex datasets",
-      technologies: ["React.js", "JavaScript", "TailwindCSS"],
+      technologies: ["JavaScript", "React.js", "TailwindCSS"],
       current: false,
     },
   ]

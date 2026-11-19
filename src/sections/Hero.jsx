@@ -71,13 +71,17 @@ const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className='w-5 h-5' />
-              </Button>
-              <AnimatedBorderButton>
-                <Download className='w-5 h-5' />
-                Resume
-              </AnimatedBorderButton>
+              <a href="/#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className='w-5 h-5' />
+                </Button>
+              </a>
+              <a href="/Resume.pdf">
+                <AnimatedBorderButton>
+                  <Download className='w-5 h-5' />
+                  Resume
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
