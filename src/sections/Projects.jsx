@@ -102,5 +102,3 @@ const Projects = () => {
 }
 
 export default Projects
-
-// 1:52:00

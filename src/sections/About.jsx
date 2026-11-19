@@ -80,5 +80,3 @@ const About = () => {
 }
 
 export default About
-
-// 1:36:29

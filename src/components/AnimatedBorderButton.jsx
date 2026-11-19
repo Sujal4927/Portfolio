@@ -33,5 +33,3 @@ const AnimatedBorderButton = ({ children }) => {
 }
 
 export default AnimatedBorderButton
-
-// 1:05:00

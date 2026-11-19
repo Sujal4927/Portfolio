@@ -146,4 +146,3 @@ const Hero = () => {
 
 export default Hero
 
-// 1:24:24

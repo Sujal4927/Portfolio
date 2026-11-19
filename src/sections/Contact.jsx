@@ -140,5 +140,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-// 1:33:20
