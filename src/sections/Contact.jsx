@@ -81,14 +81,14 @@ const Contact = () => {
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-6 max-w-7xl relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mb-6 mx-auto text-center">
           <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground mx-auto items-center'>Contact Me</h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 mx-auto">
-          <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+          <div className="glass p-5 sm:p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300 w-full min-w-0">
             <form className="space-y-6" onSubmit={handleSubmit}>
 
               <div className="">
@@ -176,7 +176,7 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-6 animate-fade-in animation-delay-400">
-            <div className="glass p-8 rounded-3xl border border-primary/30">
+            <div className="glass p-5 sm:p-8 rounded-3xl border border-primary/30 w-full min-w-0">
               <h3 className="text-xl font-semibold mb-6">
                 Contact Information
               </h3>
@@ -209,7 +209,7 @@ const Contact = () => {
                 <span className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
                 <span className="text-xl font-semibold">Connect</span>
               </div>
-              <div className="grid grid-cols-2 gap-15">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <a href="https://www.linkedin.com/in/sujal-waghmare49/" className="flex items-center gap-3 p-4 border border-primary/30 rounded-xl  hover:bg-surface hover:text-primary/50">
                   <FaLinkedin className="w-5 h-5" />
                   <span className="font-medium">LinkedIn</span>

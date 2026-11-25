@@ -17,7 +17,7 @@ const Projects = () => {
       title: "ExamNotes AI",
       description: "Generative AI-powered study and revision platform that generates notes, extracts key topics and engineered interactive data visualizations and dynamic charts using React and charting libraries.",
       image: "/projects/examnotes.png",
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase", "Gemini API", "Recharts", "TailwindCSS"],
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase", "Gemini API", "TailwindCSS"],
       link: "#",
       github: "https://github.com/Sujal4927/ExamNotes-AI"
     },
