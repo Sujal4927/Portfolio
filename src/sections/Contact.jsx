@@ -87,7 +87,7 @@ const Contact = () => {
           <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground mx-auto items-center'>Contact Me</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mx-auto">
+        <div className="grid lg:grid-cols-2 gap-16 mx-auto">
           <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300">
             <form className="space-y-6" onSubmit={handleSubmit}>
 
