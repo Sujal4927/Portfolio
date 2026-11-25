@@ -10,7 +10,7 @@ const Projects = () => {
       description: "A sophisticated car renting and management system featuring real-time car booking and comprehensive admin controls. Built using MERN stack with user-friendly interfaces.",
       image: "/projects/carrental.png",
       tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCSS"],
-      link: "#",
+      link: "https://car-rental-cyan.vercel.app/",
       github: "https://github.com/Sujal4927/Car-Rental"
     },
     {
