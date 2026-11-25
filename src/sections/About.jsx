@@ -26,8 +26,8 @@ const About = () => {
   ]
   return (
     <>
-      <section id='about' className="py-10 relative overflow-hidden">
-        <div className='container relative mx-auto px-12 z-10'>
+      <section id='about' className="py-16 relative overflow-hidden">
+        <div className='container relative mx-auto px-6 z-10'>
           {/* <div className="grid lg:grid-cols-2 gap-16 items-center"> */}
           {/* Left column */}
           <div className="space-y-8">

@@ -46,7 +46,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-12 pt-30 pb-5 relative z-10">
+      <div className="container mx-auto px-6 pt-30 pb-5 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - text content */}
           <div className="space-y-8">

@@ -56,7 +56,7 @@ const Navbar = () => {
         </div> */}
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
+        <button className="md:hidden p-1 text-foreground cursor-pointer" onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
