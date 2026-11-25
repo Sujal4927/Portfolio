@@ -87,8 +87,8 @@ const Contact = () => {
           <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground mx-auto items-center'>Contact Me</h2>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 md:gap-8 w-full">
-          <div className="glass p-3 sm:p-6 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300 min-w-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full">
+          <div className="glass p-5 sm:p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300 w-full min-w-0">
             <form className="space-y-6" onSubmit={handleSubmit}>
 
               <div className="">
@@ -100,7 +100,7 @@ const Contact = () => {
                   placeholder="Your name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full min-w-0 px-3 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:rimg-primary outline-none transition-all"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:rimg-primary outline-none transition-all"
                 />
               </div>
 
@@ -112,7 +112,7 @@ const Contact = () => {
                   placeholder="your@email.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full min-w-0 px-3 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:rimg-primary outline-none transition-all"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:rimg-primary outline-none transition-all"
                 />
               </div>
 
@@ -134,7 +134,7 @@ const Contact = () => {
                   placeholder="Your message..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full min-w-0 px-3 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:rimg-primary outline-none transition-all resize-none" />
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:rimg-primary outline-none transition-all resize-none" />
               </div>
 
               <Button
