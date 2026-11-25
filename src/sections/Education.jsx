@@ -70,7 +70,7 @@ const Education = () => {
                             <div className="p-6 rounded-2xl bg-surface border border-primary/50 ">
                                 <div className="flex items-start justify-between mb-4 flex-wrap">
                                     <div className="">
-                                        <h4 className="text-xl font-semibold">195+ Problems Solved</h4>
+                                        <h4 className="text-xl font-semibold">205+ Problems Solved</h4>
                                         <p className="font-xl text-primary">GeeksForGeeks</p>
                                     </div>
                                     <span className="px-3 py-1 font-semibold rounded-xl bg-primary text-surface">Active</span>
