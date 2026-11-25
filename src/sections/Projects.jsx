@@ -32,13 +32,13 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="py-16 relative overflow-hidden">
+    <section id="projects" className="relative overflow-hidden">
       {/* bg glows */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
       <div className="container mx-auto px-12 relative z-10">
         {/* Section header */}
-        <div className="text-center mx-auto mb-16 max-w-3xl">
+        <div className="text-center mx-auto my-6 max-w-3xl">
           <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground'>My Projects</h2>
         </div>
 
@@ -88,7 +88,7 @@ const Projects = () => {
         </div>
 
         {/* view all CTA */}
-        <div className="text-center mt-12 animate-fade-in animation-delay-500">
+        <div className="text-center mt-5 animate-fade-in animation-delay-500">
           <a href="https://github.com/Sujal4927">
             <AnimatedBorderButton>
               View All Projects
