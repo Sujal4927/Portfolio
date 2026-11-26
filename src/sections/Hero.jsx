@@ -101,7 +101,7 @@ const Hero = () => {
           {/* Right Column - text content */}
           <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
-            <div className="relative w-full max-w-xs sm:max-w-sm mx-auto">
+            <div className="relative w-full max-w-55 lg:max-w-sm sm:max-w-xs mx-auto">
               <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent
               to-primary/10 blur-2xl animate-pulse" />
               <div className="relative rounded-3xl glass p-1.5 glow-border">
