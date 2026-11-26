@@ -195,7 +195,7 @@ const Contact = () => {
                         <div className="text-sm">
                           {item.label}
                         </div>
-                        <div className="text-primary/50">{item.value}</div>
+                        <div className="text-primary/50 text-sm">{item.value}</div>
                       </div>
                     </a>
                   ))
