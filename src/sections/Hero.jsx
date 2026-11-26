@@ -20,7 +20,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className='relative min-h-screen lg:min-h-0 lg:mt-10 sm:py-8 flex items-center overflow-hidden'>
+    <section className='relative min-h-screen lg:min-h-0 lg:mt-10 flex items-center overflow-hidden [@media(max-device-width:767px)]:min-h-0!'>
       <div className="absolute inset-0">
         <img
           src="/hero-bg.jpg"
@@ -46,10 +46,10 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:pt-10 lg:pb-10 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:pt-10 lg:pb-10 relative z-10 [@media(max-device-width:767px)]:py-4!">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center [@media(max-device-width:767px)]:gap-4!">
           {/* Left Column - text content */}
-          <div className="space-y-6 lg:space-y-8">
+          <div className="space-y-6 lg:space-y-8 [@media(max-device-width:767px)]:space-y-4!">
             <div className="animate-fade-in">
               <span className='inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary'>
                 <span className='w-2 h-2 bg-primary rounded-full animate-pulse' />
