@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
-      <nav className="container flex items-center mx-auto px-6 justify-between">
+      <nav className="container flex items-center mx-auto px-4 justify-between">
         <div className="items-center ">
           <a href="#" className="text-xl font-bold tracking-tight inline-flex gap-2">
             <Code className="px-1 py-1 w-8 h-8 bg-primary rounded-xl hover:text-white" />
