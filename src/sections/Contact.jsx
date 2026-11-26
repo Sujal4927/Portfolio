@@ -176,7 +176,7 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-6 animate-fade-in animation-delay-400">
-            <div className="glass p-5 sm:p-8 rounded-3xl border border-primary/30 w-full min-w-0">
+            {/* <div className="glass p-5 sm:p-8 rounded-3xl border border-primary/30 w-full min-w-0">
               <h3 className="text-xl font-semibold mb-6">
                 Contact Information
               </h3>
@@ -201,7 +201,7 @@ const Contact = () => {
                   ))
                 }
               </div>
-            </div>
+            </div> */}
 
             {/* Connect  */}
             <div className="glass rounded-3xl p-8 border border-primary/30">
@@ -217,6 +217,10 @@ const Contact = () => {
                 <a href="https://github.com/Sujal4927" className="flex items-center gap-3 p-4 rounded-xl border border-primary/30  hover:bg-surface hover:text-primary/50 ">
                   <FaGithub className="w-5 h-5 " />
                   <span className="font-medium">GitHub</span>
+                </a>
+                <a href="" className="flex items-center gap-3 p-4 rounded-xl border border-primary/30  hover:bg-surface hover:text-primary/50 ">
+                  <Mail className="w-5 h-5 " />
+                  <span className="font-medium">Email</span>
                 </a>
               </div>
             </div>
