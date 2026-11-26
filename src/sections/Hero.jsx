@@ -20,7 +20,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className='relative min-h-screen lg:min-h-0 py-8 lg:py-16 flex items-center overflow-hidden'>
+    <section className='relative min-h-screen lg:min-h-0 lg:mt-10 sm:py-8 flex items-center overflow-hidden'>
       <div className="absolute inset-0">
         <img
           src="/hero-bg.jpg"
