@@ -81,13 +81,13 @@ const Contact = () => {
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mb-6 mx-auto text-center">
           <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground mx-auto items-center'>Contact Me</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mx-auto px-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mx-auto px-2">
           <div className="glass p-5 sm:p-5 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300 w-full min-w-0">
             <form className="space-y-6" onSubmit={handleSubmit}>
 
@@ -204,7 +204,7 @@ const Contact = () => {
             </div> */}
 
             {/* Connect  */}
-            <div className="glass rounded-3xl p-8 border border-primary/30">
+            <div className="glass rounded-3xl p-5 border border-primary/30">
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
                 <span className="text-xl font-semibold">Connect</span>
@@ -215,11 +215,11 @@ const Contact = () => {
                   <span className="font-medium">LinkedIn</span>
                 </a>
                 <a href="https://github.com/Sujal4927" className="flex items-center gap-3 p-4 rounded-xl border border-primary/30  hover:bg-surface hover:text-primary/50 ">
-                  <FaGithub className="w-5 h-5 " />
+                  <FaGithub className="w-5 h-5" />
                   <span className="font-medium">GitHub</span>
                 </a>
-                <a href="" className="flex items-center gap-3 p-4 rounded-xl border border-primary/30  hover:bg-surface hover:text-primary/50 ">
-                  <Mail className="w-5 h-5 " />
+                <a href="maito:sujalwaghmare8471@gmail.com" className="flex items-center gap-3 p-4 rounded-xl border border-primary/30  hover:bg-surface hover:text-primary/50 ">
+                  <Mail className="w-5 h-5" />
                   <span className="font-medium">Email</span>
                 </a>
               </div>
@@ -232,5 +232,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-// 2:43:24
