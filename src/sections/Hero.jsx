@@ -20,7 +20,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className='mx-auto max-w-7xl px-3 sm:px-4 lg:px-6 py-16 sm:py-24 flex items-center overflow-hidden'>
+    <section className='mx-auto max-w-7xl px-3 sm:px-3 lg:px-4 py-16 sm:py-24 flex items-center overflow-hidden'>
       <div className="absolute inset-0">
         <img
           src="/hero-bg.jpg"
@@ -46,7 +46,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 pt-16 pb-8 lg:pt-10 lg:pb-10 relative z-10">
+      <div className="container mx-auto px-2 pt-16 pb-8 lg:pt-10 lg:pb-10 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center">
           {/* Left Column - text content */}
           <div className="space-y-6 lg:space-y-8">
