@@ -20,7 +20,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className='relative min-h-screen lg:min-h-0 lg:py-16 flex items-center overflow-hidden'>
+    <section className='relative min-h-screen lg:min-h-0 py-8 lg:py-16 flex items-center overflow-hidden'>
       <div className="absolute inset-0">
         <img
           src="/hero-bg.jpg"
@@ -46,10 +46,10 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 pt-30 pb-5 lg:pt-16 lg:pb-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-6 pt-16 pb-8 lg:pt-10 lg:pb-10 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
           {/* Left Column - text content */}
-          <div className="space-y-8">
+          <div className="space-y-6 lg:space-y-8">
             <div className="animate-fade-in">
               <span className='inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary'>
                 <span className='w-2 h-2 bg-primary rounded-full animate-pulse' />
@@ -101,17 +101,17 @@ const Hero = () => {
           {/* Right Column - text content */}
           <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
-            <div className="relative max-w-md mx-auto">
+            <div className="relative w-full max-w-xs sm:max-w-sm mx-auto">
               <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent
               to-primary/10 blur-2xl animate-pulse" />
-              <div className="relative rounded-3xl glass p-2 glow-border">
+              <div className="relative rounded-3xl glass p-1.5 glow-border">
                 <img src="/hero-image.png" alt="image" className='w-full aspect-4/5 object-cover rounded-2xl' />
 
                 {/* Floating Badge */}
-                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-                    <span className="text-sm font-medium">Available For Work</span>
+                <div className="absolute -bottom-3 -right-3 glass rounded-xl px-3 py-2 animate-float">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse" />
+                    <span className="text-xs sm:text-sm font-medium">Available For Work</span>
                   </div>
                 </div>
                 {/* Stats Badge */}
