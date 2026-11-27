@@ -1,6 +1,7 @@
 import { ExternalLink } from 'lucide-react'
 import { FaGithub } from 'react-icons/fa'
 import AnimatedBorderButton from '../components/AnimatedBorderButton'
+import { motion } from 'motion/react'
 
 const Projects = () => {
 
@@ -39,13 +40,36 @@ const Projects = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center mx-auto my-6 max-w-3xl">
-          <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground'>My Projects</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{
+              once: false,
+              amount: 0.2,
+            }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground'>
+            My Projects
+          </motion.h2>
         </div>
 
         {/* Project grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+              }}
               key={idx}
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
@@ -68,7 +92,7 @@ const Projects = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6 space-y-4">
+              <div className="p-6 space-y-6">
                 <div className="flex items-start justify-between">
                   <h3 className='text-xl font-semibold group-hover:text-primary transition-colors'>{project.title}</h3>
                   <ExternalLink
@@ -83,19 +107,30 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* view all CTA */}
-        <div className="text-center mt-5 animate-fade-in animation-delay-500">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{
+            once: false,
+            amount: 0.2,
+          }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+          }}
+          className="text-center mt-5 animate-fade-in animation-delay-500">
           <a href="https://github.com/Sujal4927">
             <AnimatedBorderButton>
               View All Projects
               <ExternalLink className='w-5 h-5' />
             </AnimatedBorderButton>
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

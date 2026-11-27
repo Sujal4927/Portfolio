@@ -20,7 +20,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className='relative min-h-screen lg:min-h-0 lg:mt-10 flex items-center overflow-hidden'>
+    <section className='relative min-h-screen lg:min-h-0 flex items-center overflow-hidden'>
       <div className="absolute inset-0">
         <img
           src="/hero-bg.jpg"
@@ -46,10 +46,10 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:pt-10 lg:pb-10 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center">
+      <div className="container mx-auto max-w-7xl px-6 py-20 sm:py-24 lg:pt-25 lg:pb-10 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center px-2">
           {/* Left Column - text content */}
-          <div className="space-y-6 lg:space-y-8">
+          <div className="space-y-6 ">
             <div className="animate-fade-in">
               <span className='inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary'>
                 <span className='w-2 h-2 bg-primary rounded-full animate-pulse' />
@@ -101,10 +101,10 @@ const Hero = () => {
           {/* Right Column - text content */}
           <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
-            <div className="relative w-full max-w-55 lg:max-w-sm sm:max-w-xs mx-auto">
+            <div className="relative max-w-md mx-auto">
               <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent
               to-primary/10 blur-2xl animate-pulse" />
-              <div className="relative rounded-3xl glass p-0.5 glow-border">
+              <div className="relative rounded-3xl glass p-2 glow-border">
                 <img src="/hero-image.png" alt="image" className='w-full aspect-4/5 object-cover rounded-2xl' />
 
                 {/* Floating Badge */}

@@ -1,4 +1,5 @@
 import { BadgeCheck, Calendar, ExternalLink, GraduationCap } from "lucide-react"
+import { motion } from "motion/react"
 
 
 const Education = () => {
@@ -12,19 +13,56 @@ const Education = () => {
             <div className="container mx-auto px-6 relative z-10">
                 {/* Section Header */}
                 <div className="max-w-3xl mb-6 mx-auto text-center">
-                    <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground mx-auto items-center'>Education & Achievements</h2>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{
+                            once: false,
+                            amount: 0.2,
+                        }}
+                        transition={{
+                            duration: 0.8,
+                            ease: "easeOut",
+                        }}
+                        className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground mx-auto items-center'>
+                        Education & Achievements
+                    </motion.h2>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12 mx-auto">
                     <div className="">
-                        <div className="flex items-center space-x-3 mb-6">
+                        <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{
+                                once: false,
+                                amount: 0.2,
+                            }}
+                            transition={{
+                                duration: 0.8,
+                                ease: "easeOut",
+                            }}
+                            className="flex items-center space-x-3 mb-6">
                             <div className="p-3  rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                                 <GraduationCap className="w-6 h-6" />
                             </div>
-                            <h3 className="text-2xl font-semibold">Education</h3>
-                        </div>
+                            <h3 className="text-2xl font-semibold">
+                                Education
+                            </h3>
+                        </motion.div>
                         <div className="space-y-8">
-                            <div className="p-6 rounded-2xl bg-surface border border-primary/50">
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{
+                                    once: false,
+                                    amount: 0.2,
+                                }}
+                                transition={{
+                                    duration: 0.8,
+                                    ease: "easeOut",
+                                }}
+                                className="p-6 rounded-2xl bg-surface border border-primary/50">
                                 <div className="flex items-start justify-between mb-4 flex-wrap">
                                     <div className="">
                                         <h4 className="text-xl font-semibold">University Of Mumbai</h4>
@@ -38,9 +76,20 @@ const Education = () => {
                                         <span>2021 - 2025</span>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
 
-                            <div className="p-6 rounded-2xl bg-surface border border-primary/50 ">
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{
+                                    once: false,
+                                    amount: 0.2,
+                                }}
+                                transition={{
+                                    duration: 0.8,
+                                    ease: "easeOut",
+                                }}
+                                className="p-6 rounded-2xl bg-surface border border-primary/50 ">
                                 <div className="flex items-start justify-between mb-4 flex-wrap">
                                     <div className="">
                                         <h4 className="text-xl font-semibold">Higher Secondary (Class XII)</h4>
@@ -54,20 +103,42 @@ const Education = () => {
                                         <span>2020 - 2021</span>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
 
                     {/* Achievements */}
                     <div className="">
-                        <div className="flex items-center space-x-3 mb-6">
+                        <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{
+                                once: false,
+                                amount: 0.2,
+                            }}
+                            transition={{
+                                duration: 0.8,
+                                ease: "easeOut",
+                            }}
+                            className="flex items-center space-x-3 mb-6">
                             <div className="p-3 rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                                 <BadgeCheck className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-semibold">Achievements</h3>
-                        </div>
+                        </motion.div>
                         <div className="space-y-8">
-                            <div className="p-6 rounded-2xl bg-surface border border-primary/50 ">
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{
+                                    once: false,
+                                    amount: 0.2,
+                                }}
+                                transition={{
+                                    duration: 0.8,
+                                    ease: "easeOut",
+                                }}
+                                className="p-6 rounded-2xl bg-surface border border-primary/50 ">
                                 <div className="flex items-start justify-between mb-4 flex-wrap">
                                     <div className="">
                                         <h4 className="text-xl font-semibold">205+ Problems Solved</h4>
@@ -81,9 +152,20 @@ const Education = () => {
                                         <ExternalLink />
                                     </a>
                                 </div>
-                            </div>
+                            </motion.div>
 
-                            <div className="p-6 rounded-2xl bg-surface border border-primary/50 ">
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{
+                                    once: false,
+                                    amount: 0.2,
+                                }}
+                                transition={{
+                                    duration: 0.8,
+                                    ease: "easeOut",
+                                }}
+                                className="p-6 rounded-2xl bg-surface border border-primary/50 ">
                                 <div className="flex items-start justify-between mb-4 flex-wrap">
                                     <div className="">
                                         <h4 className="text-xl font-semibold">4 ⭐ @HackerRank</h4>
@@ -97,7 +179,7 @@ const Education = () => {
                                         <ExternalLink />
                                     </a>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import { motion } from 'motion/react'
 import { FaCode, FaLightbulb, FaRocket, FaUsers } from 'react-icons/fa'
 
 const About = () => {
@@ -32,10 +32,34 @@ const About = () => {
           {/* Left column */}
           <div className="space-y-8">
             <div className="animate-fade-in text-center">
-              <span className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground'>About Me</span>
+              <motion.span
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{
+                  once: false,
+                  amount: 0.2,
+                }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                }}
+                className='text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground'>
+                About Me
+              </motion.span>
             </div>
 
-            <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+              }}
+              className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
                 I am a Full stack developer with a strong foundation in programming and development. I am proficient in C++. My expertise extends to front-end technologies such as JavaScript, ReactJS. On the backend, I have hands-on experience with frameworks like Node.js, Express.js. My strong problem-solving skills, particularly in Data Structures and Algorithms & OOPS Concepts, enable me to effectively address complex technical challenges
               </p>
@@ -47,7 +71,7 @@ const About = () => {
               <p>
                 I am adaptable and hard-working, with strong problem-solving abilities and critical thinking skills. I excel in teamwork, effectively collaborating with others to achieve common goals. My dedication to continuous learning and improvement drives me to consistently deliver high-quality results.
               </p>
-            </div>
+            </motion.div>
 
             {/* <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className='text-lg font-medium italic text-foreground'>

@@ -1,3 +1,4 @@
+import { motion } from "motion/react"
 import { FaCss3, FaGitAlt, FaHtml5, FaNodeJs, FaPython, FaReact } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa6"
 import { SiExpress, SiJavascript, SiMongodb, SiMysql, SiTailwindcss } from "react-icons/si"
@@ -79,7 +80,20 @@ const Skills = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center mx-auto my-6 max-w-3xl">
-          <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground'>Skills</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{
+              once: false,
+              amount: 0.2,
+            }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground'>
+            Skills
+          </motion.h2>
         </div>
 
         {/* Project grid */}
@@ -87,20 +101,42 @@ const Skills = () => {
           {/* 1st left box */}
           <div className="">
             <div className="text-center">
-              <h3 className="text-3xl font-semibold">Programming Languages</h3>
+              <motion.h3
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{
+                  once: false,
+                  amount: 0.2,
+                }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                }}
+                className="text-3xl font-semibold">
+                Programming Languages
+              </motion.h3>
             </div>
             <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {languages.map((lang, idx) => (
-                <div
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{
+                    once: false,
+                    amount: 0.2,
+                  }}
+                  transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                  }}
                   key={idx}
-                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary backdrop-blur animate-fade-in"
-                  style={{ animationDelay: `${(idx + 1) * 100}ms` }}
+                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary backdrop-blur"
                 >
                   <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                     <span className="text-4xl">{lang.icon}</span>
                   </div>
                   <span className="text-lg pt-1 font-semibold">{lang.name}</span>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -108,20 +144,42 @@ const Skills = () => {
           {/* 1st Right box */}
           <div className="">
             <div className="text-center">
-              <h3 className="text-3xl font-semibold">Frontend Development</h3>
+              <motion.h3
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{
+                  once: false,
+                  amount: 0.2,
+                }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                }}
+                className="text-3xl font-semibold">
+                Frontend Development
+              </motion.h3>
             </div>
             <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {frontend.map((front, fidx) => (
-                <div
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{
+                    once: false,
+                    amount: 0.2,
+                  }}
+                  transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                  }}
                   key={fidx}
-                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
-                  style={{ animationDelay: `${(fidx + 1) * 100}ms` }}
+                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary"
                 >
                   <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                     <span className="text-4xl">{front.icon}</span>
                   </div>
                   <span className="text-lg pt-1 font-semibold">{front.name}</span>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -129,20 +187,42 @@ const Skills = () => {
           {/* 2nd left box */}
           <div className="">
             <div className="text-center">
-              <h3 className="text-3xl font-semibold">Backend Development</h3>
+              <motion.h3
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{
+                  once: false,
+                  amount: 0.2,
+                }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                }}
+                className="text-3xl font-semibold">
+                Backend Development
+              </motion.h3>
             </div>
             <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {backend.map((back, bidx) => (
-                <div
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{
+                    once: false,
+                    amount: 0.2,
+                  }}
+                  transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                  }}
                   key={bidx}
-                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
-                  style={{ animationDelay: `${(bidx + 1) * 100}ms` }}
+                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary"
                 >
                   <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                     <span className="text-4xl">{back.icon}</span>
                   </div>
                   <span className="text-lg pt-1 font-semibold">{back.name}</span>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -150,20 +230,42 @@ const Skills = () => {
           {/* 2nd right box */}
           <div className="">
             <div className="text-center">
-              <h3 className="text-3xl font-semibold">Databases & Version Control</h3>
+              <motion.h3
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{
+                  once: false,
+                  amount: 0.2,
+                }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                }}
+                className="text-3xl font-semibold">
+                Databases & Version Control
+              </motion.h3>
             </div>
             <div className="grid grid-cols-2 gap-8 py-6 sm:grid-cols-2">
               {database.map((data, didx) => (
-                <div
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{
+                    once: false,
+                    amount: 0.2,
+                  }}
+                  transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                  }}
                   key={didx}
-                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary animate-fade-in"
-                  style={{ animationDelay: `${(didx + 1) * 100}ms` }}
+                  className="min-w-3 flex flex-col items-center justify-center text-center glass p-6 rounded-2xl border border-primary/10 hover:border-primary"
                 >
                   <div className="px-3 py-3 items-center text-center rounded-2xl bg-linear-to-b from-primary/50 via-primary/75 to-primary">
                     <span className="text-4xl">{data.icon}</span>
                   </div>
                   <span className="text-lg pt-1 font-semibold">{data.name}</span>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
